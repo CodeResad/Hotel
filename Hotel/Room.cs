@@ -25,7 +25,8 @@ public class Room
 
     public string ShowInfo()
     {
-        return $"Id: {Id}, Name: {Name}, Price: {Price}, PersonCapacity: {PersonCapacity}";
+        return
+            $"Id: {Id}, Name: {Name}, Price: {Price}, PersonCapacity: {PersonCapacity}, IsAvailable: {(IsAvailable ? "Empty" : "Full")}";
     }
 
     public override string ToString()

@@ -42,6 +42,7 @@ class Program
                     Price:
                     Console.WriteLine("Enter room price: ");
                     double price;
+                    
                     if (!double.TryParse(Console.ReadLine(), out price))
                     {
                         goto Price;
@@ -50,6 +51,7 @@ class Program
                     Capacity:
                     Console.WriteLine("Enter room Capacity: ");
                     byte capacity;
+                    
                     if (!byte.TryParse(Console.ReadLine(), out capacity))
                     {
                         goto Capacity;
@@ -84,10 +86,12 @@ class Program
                     ReserveID:
                     Console.Write("Enter room ID to reserve: ");
                     int reserveId;
+                    
                     if (!int.TryParse(Console.ReadLine(), out reserveId))
                     {
                         goto ReserveID;
                     }
+                    
                     hotel.MakeReservation(reserveId);
                     break;
                 case 4:

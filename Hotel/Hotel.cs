@@ -20,10 +20,19 @@ public class Hotel
 
     public void MakeReservation(int id)
     {
+        if (rooms.Length == 0)
+        {
+            Console.WriteLine("There is no room to reserve for");
+            return;
+        }
+        
+        bool isFound = false;
+        
         for (int i = 0; i < rooms.Length; i++)
         {
             if (rooms[i].Id == id)
             {
+                isFound = true;
                 if (rooms[i].IsAvailable)
                 {
                     rooms[i].IsAvailable = false;
@@ -34,6 +43,11 @@ public class Hotel
                     Console.WriteLine("Room is Full!");
                 }
             }
+        }
+
+        if (!isFound)
+        {
+            Console.WriteLine("There is no room with this id!!!");
         }
     }
 
