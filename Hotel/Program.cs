@@ -11,7 +11,7 @@ class Program
         Hotel hotel = new Hotel(hotelName);
         Room[] createdRooms = new Room[0];
         
-        Console.WriteLine();
+        Console.Clear();
         Console.WriteLine($"Welcome to {hotelName} Hotel");
         
         do
