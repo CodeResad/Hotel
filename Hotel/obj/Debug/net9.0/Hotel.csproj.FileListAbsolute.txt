@@ -1,0 +1,15 @@
+/Users/rashadjafarzade/RiderProjects/Hotel/Hotel/bin/Debug/net9.0/Hotel
+/Users/rashadjafarzade/RiderProjects/Hotel/Hotel/bin/Debug/net9.0/Hotel.deps.json
+/Users/rashadjafarzade/RiderProjects/Hotel/Hotel/bin/Debug/net9.0/Hotel.runtimeconfig.json
+/Users/rashadjafarzade/RiderProjects/Hotel/Hotel/bin/Debug/net9.0/Hotel.dll
+/Users/rashadjafarzade/RiderProjects/Hotel/Hotel/bin/Debug/net9.0/Hotel.pdb
+/Users/rashadjafarzade/RiderProjects/Hotel/Hotel/obj/Debug/net9.0/Hotel.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rashadjafarzade/RiderProjects/Hotel/Hotel/obj/Debug/net9.0/Hotel.AssemblyInfoInputs.cache
+/Users/rashadjafarzade/RiderProjects/Hotel/Hotel/obj/Debug/net9.0/Hotel.AssemblyInfo.cs
+/Users/rashadjafarzade/RiderProjects/Hotel/Hotel/obj/Debug/net9.0/Hotel.csproj.CoreCompileInputs.cache
+/Users/rashadjafarzade/RiderProjects/Hotel/Hotel/obj/Debug/net9.0/Hotel.sourcelink.json
+/Users/rashadjafarzade/RiderProjects/Hotel/Hotel/obj/Debug/net9.0/Hotel.dll
+/Users/rashadjafarzade/RiderProjects/Hotel/Hotel/obj/Debug/net9.0/refint/Hotel.dll
+/Users/rashadjafarzade/RiderProjects/Hotel/Hotel/obj/Debug/net9.0/Hotel.pdb
+/Users/rashadjafarzade/RiderProjects/Hotel/Hotel/obj/Debug/net9.0/Hotel.genruntimeconfig.cache
+/Users/rashadjafarzade/RiderProjects/Hotel/Hotel/obj/Debug/net9.0/ref/Hotel.dll
