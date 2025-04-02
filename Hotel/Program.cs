@@ -11,9 +11,12 @@ class Program
         Hotel hotel = new Hotel(hotelName);
         Room[] createdRooms = new Room[0];
         
+        Console.WriteLine();
+        Console.WriteLine($"Welcome to {hotelName} Hotel");
         
         do
         {
+            Start:
             Console.WriteLine("1. Create a room ");
             Console.WriteLine("2. Add room ");
             Console.WriteLine("3. Make reserve ");
@@ -23,17 +26,35 @@ class Program
             Console.WriteLine();
             Console.WriteLine("Select an option: ");
             
-            int choise = Convert.ToInt32(Console.ReadLine());
+            int choice;
+            if (!int.TryParse(Console.ReadLine(), out choice))
+            {
+                Console.WriteLine("Invalid input!!!");
+                goto Start;
+            }
 
-            switch (choise)
+            switch (choice)
             {
                 case 1: 
                     Console.WriteLine("Enter room name: ");
                     string name = Console.ReadLine();
+                    
+                    Price:
                     Console.WriteLine("Enter room price: ");
-                    double price = double.Parse(Console.ReadLine());
+                    double price;
+                    if (!double.TryParse(Console.ReadLine(), out price))
+                    {
+                        goto Price;
+                    }
+                    
+                    Capacity:
                     Console.WriteLine("Enter room Capacity: ");
-                    byte capacity = byte.Parse(Console.ReadLine());
+                    byte capacity;
+                    if (!byte.TryParse(Console.ReadLine(), out capacity))
+                    {
+                        goto Capacity;
+                    }
+                    
                     Room newRoom = new Room(name, price, capacity);
                     
                     Array.Resize(ref createdRooms, createdRooms.Length + 1);
@@ -60,8 +81,13 @@ class Program
                     
                     break;
                 case 3:
+                    ReserveID:
                     Console.Write("Enter room ID to reserve: ");
-                    int reserveId = int.Parse(Console.ReadLine());
+                    int reserveId;
+                    if (!int.TryParse(Console.ReadLine(), out reserveId))
+                    {
+                        goto ReserveID;
+                    }
                     hotel.MakeReservation(reserveId);
                     break;
                 case 4:
